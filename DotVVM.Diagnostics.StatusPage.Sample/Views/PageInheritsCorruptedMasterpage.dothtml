@@ -1,0 +1,5 @@
+﻿@viewModel DotVVM.Diagnostics.StatusPage.Sample.ViewModels.PageInheritsCorruptedMasterpageViewModel, DotVVM.Diagnostics.StatusPage.Sample
+@masterPage Views/MasterPageError.dotmaster
+
+
+Test of corrupted masterpage

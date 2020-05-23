@@ -2,7 +2,7 @@
   <PropertyGroup>
     <AssemblyTitle>DotVVM.Diagnostics.StatusPage</AssemblyTitle>
     <VersionPrefix>2.4.1-preview01-76667</VersionPrefix>
-    <TargetFrameworks>netstandard2.0;net451</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net451;netstandard2.1</TargetFrameworks>
     <PackageId>DotVVM.Diagnostics.StatusPage</PackageId>
     <PackageVersion>2.4.1-preview01-76667</PackageVersion>
     <Authors>RIGANTI</Authors>
@@ -24,6 +24,9 @@
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <AssemblyName>DotVVM.Diagnostics.StatusPage</AssemblyName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">
+    <DefineConstants>netstandard21</DefineConstants>
+  </PropertyGroup>
   <ItemGroup>
     <None Remove="dotvvm_serialized_config.json.tmp" />
   </ItemGroup>
@@ -36,5 +39,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net451'">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="Microsoft.Extensions.Options">
+      <Version>3.1.4</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+    <PackageReference Include="Microsoft.Extensions.Options">
+      <Version>3.1.4</Version>
+    </PackageReference>
   </ItemGroup>
 </Project>

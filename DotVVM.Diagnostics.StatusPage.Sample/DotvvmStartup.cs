@@ -63,7 +63,11 @@ namespace DotVVM.Diagnostics.StatusPage.Sample
 
         public void ConfigureServices(IDotvvmServiceCollection options)
         {
-            options.AddStatusPage();
+            options.AddStatusPage(new StatusPageOptions()
+            {
+                CompileAfterPageLoads = true, 
+                BuildInParallel = true, 
+            });
             options.AddDefaultTempStorages("Temp");
         }
     }

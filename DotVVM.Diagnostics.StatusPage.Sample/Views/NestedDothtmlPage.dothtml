@@ -1,0 +1,8 @@
+﻿@viewModel DotVVM.Diagnostics.StatusPage.Sample.ViewModels.NestedDothtmlPageViewModel, DotVVM.Diagnostics.StatusPage.Sample
+@masterPage Views/MasterPage2.dotmaster
+
+<dot:Content ContentPlaceHolderID="NetedPage">
+    Nested Page /master 2
+
+</dot:Content>
+

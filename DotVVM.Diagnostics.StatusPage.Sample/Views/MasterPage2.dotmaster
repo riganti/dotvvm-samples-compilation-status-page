@@ -1,0 +1,9 @@
+﻿@viewModel DotVVM.Diagnostics.StatusPage.Sample.ViewModels.MasterPage2ViewModel, DotVVM.Diagnostics.StatusPage.Sample
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    Master page 2
+    <dot:ContentPlaceHolder ID="NetedPage">
+    </dot:ContentPlaceHolder>
+</dot:Content>
+

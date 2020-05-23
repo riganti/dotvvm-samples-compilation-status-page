@@ -1,0 +1,8 @@
+﻿@viewModel DotVVM.Diagnostics.StatusPage.Sample.ViewModels.MasterPageErrorViewModel, DotVVM.Diagnostics.StatusPage.Sample
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    {{sd: }}
+</dot:Content>
+

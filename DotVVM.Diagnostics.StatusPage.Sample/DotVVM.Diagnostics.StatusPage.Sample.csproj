@@ -26,7 +26,11 @@
         <None Remove="Views\BindingsTest.dothtml" />
         <None Remove="Views\BindingsTestError.dothtml" />
         <None Remove="Views\ControlTestError.dothtml" />
+        <None Remove="Views\MasterPage2.dotmaster" />
+        <None Remove="Views\MasterPageError.dotmaster" />
         <None Remove="Views\NestedControlTest.dothtml" />
+        <None Remove="Views\NestedDothtmlPage.dothtml" />
+        <None Remove="Views\PageInheritsCorruptedMasterpage.dothtml" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
