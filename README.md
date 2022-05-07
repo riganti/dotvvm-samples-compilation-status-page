@@ -1,4 +1,7 @@
 # DotVVM Status Page
+
+> **This repository is no longer active - this feature is now included in [DotVVM main repository](https://github.com/riganti/dotvvm).**
+
 Compilation Status Page is a site that allows you to easily check what views, controls and masterpages are broken due to compilation errors.
 
 ## How it works
